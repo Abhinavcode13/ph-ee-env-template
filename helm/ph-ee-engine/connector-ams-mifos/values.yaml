@@ -1,3 +1,5 @@
+
+
 service:
   apiversion: "v1"
 
@@ -22,12 +24,12 @@ ams_local_loan_host : ""
 dfspids: ""
 extraInitContainers: ""
 ## tenants properties have been moved to fin12
-limits:
-  cpu: "500m"
-  memory: "384M"
-requests:
-  cpu: "100m"
-  memory: "256M"  
+# limits:
+#   cpu: "500m"
+#   memory: "384M"
+# requests:
+#   cpu: "100m"
+#   memory: "256M"  
 ingress:
   enabled: false
   annotations: {}
