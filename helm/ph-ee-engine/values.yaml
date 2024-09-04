@@ -104,7 +104,7 @@ camunda-platform:
 
     resources:
       requests:
-        cpu: 100m
+        cpu: 50m
 
   zeebe-gateway:
     replicas: 1
@@ -275,8 +275,8 @@ channel:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"
+      memory: "128k"
+      cpu: "50m"
   service:
     annotations: {}
 # Enabling this will publicly expose your channel instance.
@@ -307,8 +307,8 @@ channel:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"
+        memory: "128k"
+        cpu: "50m"
 # Allows you to add any config files in /usr/share/
     # such as ph-ee-connector-channel.yml for deployment  
     # ph-ee-connector-channelConfig: {}
@@ -483,8 +483,8 @@ ph_ee_connector_mojaloop:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"           
+      memory: "128k"
+      cpu: "50m"           
 # Enabling this will publicly expose your mojaloop instance.
 # Only enable this if you have security enabled on your cluster    
   ingress:
@@ -512,8 +512,8 @@ ph_ee_connector_mojaloop:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as ph-ee-connector-mojaloop-java.yml for deployment  
     # ph-ee-connector-mojaloop-javaConfig: {}
@@ -576,8 +576,8 @@ operations_app:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"         
+      memory: "128k"
+      cpu: "50m"         
 # Enabling this will publicly expose your operations_app instance.
 # Only enable this if you have security enabled on your cluster       
   ingress:
@@ -605,8 +605,8 @@ operations_app:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as operations_app.yml for deployment
 
@@ -661,8 +661,8 @@ operations_web:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "100M"
-      cpu: "100m"   
+      memory: "128k"
+      cpu: "50m"   
 
   backend:
     PH_OPS_BACKEND_SERVER_URL: http://ph-ee-operations-app
@@ -725,8 +725,8 @@ operations_web:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "100M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as ph-ee-operations-web.yml for deployment
     # ph-ee-operations-webConfig: {}
@@ -831,8 +831,8 @@ mpesa:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"       
+      memory: "128k"
+      cpu: "50m"       
 # Enabling this will publicly expose your mpesa instance.
 # Only enable this if you have security enabled on your cluster    
   ingress:
@@ -860,8 +860,8 @@ mpesa:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as ph-ee-connector-mpesa.yml for deployment  
     # ph-ee-connector-mpesaConfig: {}
@@ -923,8 +923,8 @@ roster_connector:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"        
+      memory: "128k"
+      cpu: "50m"        
   deployment:
     annotations: {}
     affinity: {}
@@ -945,8 +945,8 @@ roster_connector:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as ph-ee-connector-ams-roster.yml for deployment  
     # ph-ee-connector-ams-rosterConfig: {}
@@ -1008,8 +1008,8 @@ paygops_connector:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"       
+      memory: "128k"
+      cpu: "50m"       
   deployment:
     annotations: {}
     affinity: {}
@@ -1030,8 +1030,8 @@ paygops_connector:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as ph-ee-connector-ams-paygops.yml for deployment  
     # ph-ee-connector-ams-paygopsConfig: {}
@@ -1094,8 +1094,8 @@ messagegateway:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"   
+      memory: "128k"
+      cpu: "50m"   
 # Enabling this will publicly expose your message-gateway instance.
 # Only enable this if you have security enabled on your cluster    
   ingress:
@@ -1130,8 +1130,8 @@ messagegateway:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as message-gateway.yml for deployment  
     # message-gatewayConfig: {}
@@ -1258,8 +1258,8 @@ zeebe_ops:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as zeebeops.yml for deployment  
     # ph-ee-zeebe-opsConfig: {}
@@ -1358,8 +1358,8 @@ importer_es:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"  
+      memory: "128k"
+      cpu: "50m"  
   javaToolOptions: "-Xmx256M"
   deployment:
     annotations: {}
@@ -1376,8 +1376,8 @@ mockpayment:
     memory: "512M"
     cpu: "500m"
   requests:
-    memory: "256M"
-    cpu: "100m"
+    memory: "128k"
+    cpu: "50m"
   deployment:
     annotations: {}
 
@@ -1481,8 +1481,8 @@ importer_rdbms:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"      
+      memory: "128k"
+      cpu: "500m"      
   deployment:
     annotations: {}
     affinity: {}
@@ -1503,8 +1503,8 @@ importer_rdbms:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as ph-ee-importer_rdbms.yml for deployment  
     # ph-ee-importer_rdbmsConfig: {}
@@ -1599,8 +1599,8 @@ connector_bulk:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"
+      memory: "128k"
+      cpu: "50m"
   service:
     annotations: {}
 # Enabling this will publicly expose your connector_bulk instance.
@@ -1628,8 +1628,8 @@ connector_bulk:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"
+        memory: "128k"
+        cpu: "50m"
 # Allows you to add any config files in /usr/share/
     # such as ph-ee-connector-bulk.yml for deployment  
     # ph-ee-connector-bulkConfig: {}
@@ -1669,8 +1669,8 @@ ph_ee_connector_gsma:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"  
+      memory: "128k"
+      cpu: "50m"  
   deployment:
     annotations: {}
     affinity: {}
@@ -1691,8 +1691,8 @@ ph_ee_connector_gsma:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as ph_ee_connector_gsma.yml for deployment  
     # ph_ee_connector_gsmaConfig: {}
@@ -1765,8 +1765,8 @@ ph-ee-connector_slcb:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"          
+      memory: "128k"
+      cpu: "50m"          
   deployment:
     annotations: {}
     affinity: {}
@@ -1787,8 +1787,8 @@ ph-ee-connector_slcb:
         memory: "512M"
         cpu: "500m"
       requests:
-        memory: "512M"
-        cpu: "100m"    
+        memory: "128k"
+        cpu: "50m"    
 # Allows you to add any config files in /usr/share/
     # such as ph_ee_connector_slcb.yml for deployment  
     # ph_ee_connector_slcbConfig: {}
@@ -1827,8 +1827,8 @@ mock_oracle:
     memory: "512M"
     cpu: "500m"
   requests:
-    memory: "512M"
-    cpu: "100m"
+    memory: "128k"
+    cpu: "50m"
 # Enabling this will publicly expose your mock_oracle instance.
 # Only enable this if you have security enabled on your cluster    
   ingress:
@@ -2088,8 +2088,8 @@ billPay:
       memory: "512M"
       cpu: "500m"
     requests:
-      memory: "512M"
-      cpu: "100m"
+      memory: "129k"
+      cpu: "50m"
   service:
     annotations: {}
   # Only enable this if you have security enabled on your cluster
@@ -2185,7 +2185,7 @@ minio:
   fullnameOverride: "minio"
   resources:
     requests:
-      memory: 256Mi
+      memory: 128k
   replicas: 1
   persistence:
     enabled: true
